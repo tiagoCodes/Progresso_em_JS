@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Dom</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: rgb(5, 94, 5) ;
+            color: white;
+            width: 200px;   /*largura*/
+            height: 200px; /*comprimento*/
+            line-height: 200px;  /*centraliza o texto com base no comprimento*/
+            text-align: center;  /*centraliza o texto com base na largura*/
+        }
+    </style>
+</head>
+<body>
+  <div id = "area">
+    Interaja....
+  </div>
+
+  <script>
+    var a = window.document.getElementById('area')  /*getElementById('area') → é um método do document que procura um elemento pelo seu atributo id, no caso (area)*/
+    a.addEventListener('click', clicar)    /*addEvent... diz quando acontecer tal evento no caso 'click' apareça (clicar)*/
+    a.addEventListener('mouseenter', entrar)  /*addEvent... diz quando acontecer tal evento no caso 'mouseenter' apareça (entrar)*/
+    a.addEventListener('mouseout', sair)   /*mesma fução dos acima*/
+
+    function clicar(){
+      a.innerText = 'clicou!'    /*a.innerText  diz mudar o testo */
+      a.style.background = 'read'
+    }
+    function entrar(){
+      a.innerText = 'Entrou!'
+
+    }
+
+    function sair(){
+      a.innerText = 'Sair!'
+      a.style.background = 'green'
+
+    }
+  </script> 
+</body>
+</html>

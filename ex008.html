@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antes e Depôis</title>
+  <style>
+    div#desafio {
+     background-color: antiquewhite;
+     font: 14pt arial;
+     width: 230px;
+     height: 70px;
+     line-height: 70px;
+     text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Antes e depois </h1>
+  <div id="desafio">Antecessor e Sucessor </div>
+  <script>
+  var exercicio = window.document.getElementById('desafio')
+  exercicio.addEventListener('click', clicar)
+  function clicar() {
+   var numero = prompt('Me diga um numero')
+   numero = Number(numero)   // o Number transforma o numero-string em numero inteiro nesse caso
+   alert (`O sucessor de ${numero} é ${numero + 1} \n E o antecessor é ${numero - 1}` )
+   
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com Dom</title>
+<style>
+  body{
+    background-color: rgb(115, 124, 243);
+  }
+  div#msg , div#msg2{
+    background-color: blueviolet;
+    width: 130px;
+  }
+  hr{
+    width: 400px;
+    background-color: black;
+    margin: 0;
+    height: 4px;
+    border:none;
+  }
+</style>
+</head>
+<body>
+  <h1>Inissiando os estudos com Dom</h1>
+  <p>Aqui vai o que eu aprendi</p>
+  <h2>Vamos começar </h2>
+  <p>Aprendendo a usar <strong>Dom</strong> no JS</p>
+  <p>Formas de acessar os elementos da arvore Dom</p>
+   <hr>
+   <br>
+  <div id="msg"> <strong>Primeira forma </strong></div>
+  <br>
+  <div id="msg2" ><strong>Sengunda forma</strong></div>
+
+  <script>
+    var por_nome = window.document.getElementById("msg")
+      por_nome.addEventListener('click', clicar)
+      function clicar (){
+        alert("Essa foi com o getElementBYId")
+      }
+      var por_marca = window.document.getElementsByTagName("h1")[0]
+      por_marca.addEventListener('click', clicar2)
+      function clicar2 (){
+        alert(por_marca.innerText)
+      } 
+  </script>
+  
+</body>
+</html>

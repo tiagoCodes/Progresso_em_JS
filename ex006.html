@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio das mensagens</title>
+  <style>
+    .container{
+      display: flex;
+      gap: 10px;
+    }
+    div#caixa1, div#caixa2, div#caixa3 {
+      background-color: rgb(216, 214, 214);
+      color: black;
+      font: 14pt arial;
+      width: 110px;
+      height: 70px;
+      line-height: 70px ;
+      text-align: center;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Desafio das mensagens </h1>
+  <div class="container">
+    <div id="caixa1"> Botão 1</div>
+    <div id="caixa2"> Botão 2</div>
+    <div id="caixa3"> Botão 3</div>
+  </div>
+  <script>
+    var a = window.document.getElementById("caixa1")
+    a.addEventListener('click', clicar)
+    function clicar(){
+      alert("vc clicou no botão 1")
+    }
+    var b = window.document.getElementById('caixa2')
+    a.addEventListener('click', clicar2)
+    function clicar2() {
+      alert("Você clicou no Botão 2")
+    }
+    var c = window.document.getElementById('caixa3')
+    a.addEventListener("click", clicar3)
+     function clicar3(){
+     alert("Você clicou no botão 3")
+    }
+  </script>
+
+</body>
+</html>
