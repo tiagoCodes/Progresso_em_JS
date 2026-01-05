@@ -39,10 +39,11 @@
       function clicar (){
         alert("Essa foi com o getElementBYId")
       }
-      var por_marca = window.document.getElementsByTagName("h1")[0]
+   var por_marca = window.document.getElementsByTagName('div')[1]   //buscas os elemento em azul ex: p, div, h2, h1 etc...
       por_marca.addEventListener('click', clicar2)
       function clicar2 (){
-        alert(por_marca.innerText)
+        alert(por_marca.innerText  + ' Com getElementsByTagName ')
+              document.get
       } 
   </script>
   
